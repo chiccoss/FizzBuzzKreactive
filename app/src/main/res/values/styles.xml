@@ -1,0 +1,135 @@
+<resources>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/colorPrimary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_kreactive</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black_two</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:forceDarkAllowed" >false</item>
+
+
+        <!-- region Text -->
+        <item name="TextHeadline">@style/AppTheme.Headline</item>
+        <item name="TextTitle">@style/AppTheme.Title</item>
+        <item name="TextTitleTransparent">@style/AppTheme.Title.Transparent</item>
+        <item name="TextTitleBold">@style/AppTheme.Title.Bold</item>
+        <item name="TextTitleBoldOrange">@style/AppTheme.Title.Bold.Orange</item>
+        <item name="TextSubtitle">@style/AppTheme.Subtitle</item>
+        <item name="TextSubtitleTransparent">@style/AppTheme.Subtitle.Transparent</item>
+        <item name="TextSubtitleBold">@style/AppTheme.Subtitle.Bold</item>
+        <item name="TextBody">@style/TextAppearance.AppTheme.Body1</item>
+
+        <!-- endregion -->
+
+        <item name="editTextStyle">@style/AppTheme.EditText</item>
+        <item name="android:progressBarStyle">@style/Widget.AppTheme.ProgressBar</item>
+
+    </style>
+
+    <style name="AppTheme.ToolBarTitleWhite">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/basier_square_bold</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="AppTheme.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:fontFamily">@font/basier_square_regular</item>
+        <item name="android:padding">@dimen/spacing_medium</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/warm_grey</item>
+        <item name="android:textCursorDrawable">@drawable/ic_edit_text_cursor</item>
+        <item name="android:letterSpacing" >0</item>
+        <item name="android:background">@drawable/background_edit_text</item>
+        <item name="android:paddingStart">@dimen/spacing_medium</item>
+        <item name="android:paddingEnd">@dimen/spacing_medium</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlNormal">@color/brownish_grey</item>
+        <item name="colorControlActivated">@color/brownish_grey</item>
+        <item name="colorControlHighlight">@color/brownish_grey</item>
+        <item name="android:background">@drawable/background_edit_text</item>
+    </style>
+
+
+    <style name="MaterialButton_Theme" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:fontFamily">@font/basier_square_bold</item>
+        <item name="android:textColor">@color/black_three</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">@dimen/spacing_tiny</item>
+        <item name="backgroundTint">@android:color/white</item>
+    </style>
+
+
+    <!-- region Text -->
+
+    <style name="AppTheme.Headline" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="fontFamily">@font/basier_square_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Title" parent="TextAppearance.MaterialComponents.Headline3">>
+        <item name="fontFamily">@font/basier_square_regular</item>
+        <item name="android:textSize">@dimen/font_20</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Title.Transparent">
+        <item name="android:textColor">@color/white_transparent</item>
+    </style>
+
+    <style name="AppTheme.Title.Bold">
+        <item name="fontFamily">@font/basier_square_bold</item>
+    </style>
+
+    <style name="AppTheme.Title.Bold.Orange">
+        <item name="fontFamily">@font/basier_square_bold</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="AppTheme.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">>
+        <item name="fontFamily">@font/basier_square_regular</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Subtitle.Transparent" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/basier_square_regular</item>
+        <item name="android:textColor">@color/white_transparent</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+
+    <style name="AppTheme.Subtitle.Bold">
+        <item name="fontFamily">@font/basier_square_bold</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/basier_square_regular</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region progressBar -->
+    <style name="Widget.AppTheme.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:elevation">16dp</item>
+        <item name="android:background">@drawable/background_white_with_corner</item>
+    </style>
+
+    <!-- endregion -->
+</resources>

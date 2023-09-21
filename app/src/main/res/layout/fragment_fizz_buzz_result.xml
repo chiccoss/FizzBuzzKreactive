@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/fragmentFizzBuzzResultTitleTv"
+        style="?attr/TextTitleBoldOrange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/fragment_fizzbuzz_result_title"
+        android:padding="@dimen/spacing_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/fragmentFizzBuzzResultFirstWordTv"
+        style="?attr/TextTitle"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentFizzBuzzResultTitleTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/fragmentFizzBuzzResultSecondWordTv"
+        style="?attr/TextTitle"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentFizzBuzzResultFirstWordTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/fragmentFizzBuzzResultFirstNumberTv"
+        style="?attr/TextTitle"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentFizzBuzzResultSecondWordTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/fragmentFizzBuzzResultSecondNumberTv"
+        style="?attr/TextTitle"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentFizzBuzzResultFirstNumberTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/fragmentFizzBuzzResultLimitTv"
+        style="?attr/TextTitle"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentFizzBuzzResultSecondNumberTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragmentFizzBuzzResultRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentFizzBuzzResultLimitTv"
+        tools:itemCount="100"
+        tools:listitem="@layout/item_fizz_buzz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

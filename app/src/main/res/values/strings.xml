@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">FizzbuzzKreactive</string>
+
+
+    <!--region Error-->
+    <string name="empty_first_word">Le champ du premier mot ne doit pas être vide.</string>
+    <string name="empty_second_word">Le champ du deuxième mot ne doit pas être vide.</string>
+    <string name="empty_first_number">Le champ du premier nombre ne doit pas être vide.</string>
+    <string name="empty_second_number">Le champ du deuxième nombre ne doit pas être vide.</string>
+    <string name="empty_limit">Le champ de la limite ne doit pas être vide.</string>
+    <string name="invalid_first_number">Le champ du premier nombre doit être valide.</string>
+    <string name="invalid_second_number">Le champ du deuxième nombre doit être valide.</string>
+    <string name="invalid_limit">Le champ de la limite doit être valide.</string>
+    <!--endregion-->
+
+    <!--region HomeFragment-->
+    <string name="fragment_home_first_word_hint">Premier mot…</string>
+    <string name="fragment_home_second_word_hint">Deuxième mot…</string>
+    <string name="fragment_home_first_number_hint">Premier chiffre…</string>
+    <string name="fragment_home_second_number_hint">Deuxième chiffre…</string>
+    <string name="fragment_home_limit_hint">Limite…</string>
+    <string name="fragment_home_see_results">Voir resultats…</string>
+    <string name="fragment_fizzbuzz_result_title">Fizz Buzz result</string>
+    <!--endregion-->
+
+    <!--region ResultFragment-->
+    <string name="fragment_results_first_word_text">Premier mot : %s</string>
+    <string name="fragment_results_second_word_text">Deuxième mot : %s</string>
+    <string name="fragment_results_first_number_text">Premier chiffre : %s</string>
+    <string name="fragment_results_second_number_text">Deuxième chiffre : %s</string>
+    <string name="fragment_results_limit_text">Limite : %s</string>
+    <!--endregion-->
+
+</resources>
