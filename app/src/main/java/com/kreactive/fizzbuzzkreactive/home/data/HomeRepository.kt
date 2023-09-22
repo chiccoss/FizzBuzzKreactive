@@ -85,9 +85,10 @@ class HomeRepository(
         try {
             delay(2000) //SIMULATE NETWORK CALL
             val listString = mutableListOf<String>()
+            var value = ""
             repeat(limit) { i ->
+                value = ""
                 val index = i + 1
-                var value = ""
                 if (index % firstNumber == 0) value += firstWord
                 if (index % secondNumber == 0) value += secondWord
                 if (value.isEmpty()) value = index.toString()

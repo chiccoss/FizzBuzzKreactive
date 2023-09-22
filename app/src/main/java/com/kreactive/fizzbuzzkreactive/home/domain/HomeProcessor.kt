@@ -76,7 +76,7 @@ class HomeProcessor(
         ).apply {
             when (this) {
                 is Resource.Success -> next(HomeResult.GotFizzBuzzResult(data))
-                is Resource.Error -> next(HomeResult.Error(error.message!!))
+                is Resource.Error -> error.message?.let {  next(HomeResult.Error(it))}
                 is Resource.AppError -> next(HomeResult.AppError(error as AppErrorType))
             }
         }
