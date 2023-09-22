@@ -9,6 +9,7 @@ import com.kreactive.fizzbuzzkreactive.app.Resource
 import com.kreactive.fizzbuzzkreactive.app.extention.isCastableToInt
 import com.kreactive.fizzbuzzkreactive.base.error.AppErrorType
 import com.kreactive.fizzbuzzkreactive.home.data.FizzBuzzData
+import kotlinx.coroutines.delay
 
 class HomeProcessor(
     private val context: Context,
@@ -82,7 +83,8 @@ class HomeProcessor(
         }
     }
 
-    private fun initApplication(next: ProcessorResultCallback) {
+    private suspend fun initApplication(next: ProcessorResultCallback) {
+        delay(1000) //TODO SIMULATE APP INIT
         next(HomeResult.InitApplication)
     }
 
